@@ -1,9 +1,9 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class Main {
+public class ConnectionTest {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/JavaLab";
+        String url = "jdbc:mysql://localhost:3306/javalab";
         String user = "root";
         String pass = "";
 
