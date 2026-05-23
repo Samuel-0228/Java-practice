@@ -13,10 +13,15 @@ public class Employee {
         return name;
     }
 
-    public class Fulltime implements Payable {
+    public class Fulltime implements Payable, Taxable {
         @Override
         public double CalculateSalary() {
-            return 30000;
+            return 30000 - calculateTax();
+        }
+
+        @Override
+        public double calculateTax() {
+            return 30000 * 0.1;
         }
     }
 
