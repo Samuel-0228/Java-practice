@@ -1,0 +1,2 @@
+Line 1: Hello from character streams.
+Line 2: Java handles Unicode characters here.
