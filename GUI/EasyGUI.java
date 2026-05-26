@@ -1,12 +1,12 @@
 import javax.swing.JOptionPane;
 
 public class EasyGUI {
-    public static void main(String[] name) {
-        String num1 = JOptionPane.showInputDialog("Enter the first number:");
-        String num2 = JOptionPane.showInputDialog("Enter the second number");
-        int sum = Integer.parseInt(num1) + Integer.parseInt(num2);
+    public static void main(String[] args) {
+        int num1 = Integer.parseInt(JOptionPane.showInputDialog("Enter the first number: "));
+        int num2 = Integer.parseInt(JOptionPane.showInputDialog("Enter the second number: "));
 
-        JOptionPane.showMessageDialog(null, "The sum of the two numbers is: " + sum);
+        int sum = num1 + num2;
+        JOptionPane.showMessageDialog(null, "The sum of " + num1 + " and " + num2 + " is: " + sum);
 
     }
 
